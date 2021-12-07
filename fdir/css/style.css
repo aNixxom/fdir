@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+
+:root {
+    --body-bg: white;
+    --box-bg: #3c4563;
+    --box-fc: white;
+    --hoverc: #262f47;
+}
+
+/* p {
+    outline: red solid 1px;
+} */
+
+body {
+    background-color: var(--body-bg);
+    margin: 0;
+}
+
+footer {
+  background-color: var(--box-bg);
+  color: white;
+  text-align: right;
+  font-family: 'Saira', sans-serif;
+  padding: 10px;
+}
+
+h1 {
+    margin:auto;
+}
+
+.page-title, .section-title {
+    padding-top: 1%;
+    user-select: none;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Saira', sans-serif;
+}
+
+.section-title {
+  margin-bottom: 3%;
+}
+
+
+.page-title-text-sub {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: var(--box-bg);
+    display: inline-block;
+    margin-top: 0;
+    color: white;
+    padding: 10px;
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--box-bg);
+}
+
+
+li {
+    float:left;
+}
+
+li a {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: var(--hoverc);
+}
+
+#active {
+    background-color: var(--hoverc);
+}
+
+
+.card {
+    outline: red soilid 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.card-ima {
+    width: 100px;
+    height: 100px;
+    padding-top: 5px;
+    object-fit: cover;
+}
+
+.name {
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.title {
+    font-family: arial;
+    color: gray;
+    font-size: 18px;
+}
+
+.fdic {
+    font-family: Verdana,sans-serif;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: var(--box-bg);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+button:hover, a:hover {
+    background-color: var(hoverc);
+  }
+
+.section-content {
+    background-color:var(--box-bg);
+    margin-top: 3%;;
+}
+
+
+#location-img {
+    margin:auto;
+    display: block;
+    padding-bottom: 15px;
+}
+
+#address-link {
+    text-decoration: underline;
+}
+#address-link:hover {
+    cursor: pointer;
+}
+
+.loc-title, .links-title {
+    text-align:center;
+    color: white;
+    font-family: Open Sans,Arial,sans-serif;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+.about-us {
+    margin: auto;
+    margin-top: 2%;
+    padding: 10px;
+    color: white;
+    text-align: center;;
+    background-color: var(--box-bg);
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.about-us-text {
+  font-size: 25px;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.contact-us-title{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contact-us-content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
+}
+
+.cal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}   
+
+.cal {
+    margin: auto;
+    display: block;
+    width: 80%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.links-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* outline: red solid 1px; */
+    padding-bottom: 15px;
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.links{
+    /* outline: fuchsia solid 1px; */
+    max-width: fit-content;
+}
+
+.links:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+

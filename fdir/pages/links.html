@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>FDIR - Links</title>
+</head>
+<body>
+    <header class="page-header">
+        <div class="page-title">
+            <h1>Federal Department of Internet Regulation</h1>
+            <h3 class="page-title-text-sub">Established 2021</h3>
+        </div>  
+        <ul class="nav-bar">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/the-department.html">The Department</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/bill.html">Bill</a></li>
+            <li><a id="active" href="pages/links.html">Links/Resources</a></li>
+        </ul>
+    </header>
+    <section class="section-content">
+        <h1 class="links-title">Links/Resources</h1>
+        <div class="links-content">
+            <p class="links" id="icon-link" title="Click to open link">Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome</p>
+            <p class="links" id="g-font-1" title="Click to open link">Cutive Mono (Google Fonts)</p>
+            <p class="links" id="g-font-3" title="Click to open link">Saira  (Google Fonts)</p>
+            <p class="links" id="g-font-2" title="Click to open link">Source Code Pro + (Google Fonts)</p>
+            <p class="links" id="sirs-link" title="Click to open link">Lohr, Steve. "Regulation in the Digital Age." New York Times, 12 Nov 2019. SIRS Issues Researcher</p>
+            <p class="links" id="cq-link" title="Click to open link">Karaim, Reed. "Reining In Big Tech." CQ Researcher, 7 May 2021, pp. 1-29</p>
+            <p class="links" id="cato-link" title="Click to open link">Feeney, Matthew. “Big Tech and Free Speech</p>
+        </div>  
+    </section>
+    <footer>
+        Website programmed by Jacob D. Martin
+    </footer>
+    <script>
+        let cato_links = document.getElementById('cato-link')
+        let cq_link = document.getElementById('cq-link')
+        let sirs_link = document.getElementById('sirs-link')
+        let g_font_3 = document.getElementById('g-font-3')
+        let g_font_2 = document.getElementById('g-font-2')
+        let g_font_1 = document.getElementById('g-font-1')
+        let icon_link = document.getElementById('icon-link')
+        icon_link.addEventListener('click', openIconLink)
+        g_font_1.addEventListener('click', openGoogleFont1)
+        g_font_2.addEventListener('click', openGoogleFont2)
+        g_font_3.addEventListener('click', openGoogleFont3)
+        sirs_link.addEventListener('click', openSirsLink)
+        cq_link.addEventListener('click', openCqLink)
+        cato_links.addEventListener('click', openCatoLink)
+        function openIconLink(){open("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")}
+        function openGoogleFont1(){open("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap")}
+        function openGoogleFont2(){open("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap")}
+        function openGoogleFont3(){open("https://fonts.googleapis.com/css2?family=Saira&display=swap")}
+        function openSirsLink(){open("https://explore.proquest.com/sirsissuesresearcher/document/2321158878?accountid=34697")}
+        function openCqLink(){open("https://library.cqpress.com/cqresearcher/document.php?id=cqresrre2021050700")}
+        function openCatoLink(){open("https://www.cato.org/policy-report/january/february-2021/big-tech-free-speech")}
+    </script>
+</body>
+</html>
+

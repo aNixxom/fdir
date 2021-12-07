@@ -1,0 +1,416 @@
+@font-face {
+    font-family: net-prox;
+    src: url('/fonts/FontsFree-Net-Proxima-Nova-A-W01-Extrabold.ttf');
+}
+
+@font-face {
+    font-family: net-baloo;
+    src: url('/fonts/FontsFree-Net-BalooChettan-Regular.ttf');
+}
+
+@font-face {
+  font-family: joesfin sans;
+  src: url('/fonts/JosefinSans-Italic-VariableFont_wght.ttf')
+}
+
+
+body {
+  background-color: #161A24;
+  margin: 0;
+}
+
+footer {
+  margin-top: 6vw;
+  font-family: cursive;
+  float: left;
+  color: white;
+}
+
+#snackbar {
+  visibility: hidden; 
+  min-width: 250px; 
+  margin-left: -125px; 
+  background-color: #333;
+  color: #fff; 
+  text-align: center; 
+  border-radius: 2px; 
+  padding: 16px; 
+  position: fixed; 
+  z-index: 2; 
+  left: 50%; 
+  bottom: 30px; 
+}
+
+#credits-button {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+#snackbar.show {
+  visibility: visible; 
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.navbar-parent {
+  top: 0;
+  width: 100%;
+  display: flex;
+  float: left;
+  position: fixed;
+  z-index: 1001;
+  align-items: center;
+  justify-content: center;
+  background-color: #161A24;
+}
+
+
+.logo {
+  user-select: none;
+  outline: white solid 2px;
+  padding: 2px;
+  text-decoration: none;
+  font-family: net-baloo;
+  color: white;
+  margin: 2%
+}
+
+.logo:hover{
+  cursor:default;
+}
+
+.navbar a {
+  display: block;
+  float: left;
+  user-select: none;
+  padding: 10px;
+  font-family: net-prox;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar { 
+  text-align: center;
+}
+
+.slide-show, .tests{
+  -webkit-user-drag: none;
+  background-image: url(/images/home-temp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+  text-align: center;
+  color: white;
+  font-size: 0;
+}
+
+.center {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  top: 10vw;
+  z-index: 1;
+  padding: auto;
+  font-family: net-prox;
+  position: absolute;
+  color: white;
+  font-size: 70px;
+  right: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.sub-title{
+  text-align: center;
+  top: 27vw;
+  margin-top: auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;;
+  z-index: 100;
+  font-weight: lighter;
+  text-transform: uppercase;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  right: 25%;
+  left: 25%;
+}
+
+.animate__fadeInDown .animate__fadeInUp{
+  animation-delay: .5s;  
+  animation-duration: 1s;
+}
+
+.animate__fadeInLeft, .animate__fadeInRight {
+  width: 100%;
+  height: auto;
+  max-width: 100vw;
+  overflow: hidden;
+  animation-duration: 2s;
+}
+
+.our-mission {
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;;
+}
+
+.our-mission > div {
+  text-align: center;
+  margin: 50px;
+}
+
+#our-word{ 
+  font-size: 50px;
+  color:#1d5097;
+}
+
+#mission-title {
+  left: 50%;
+  text-align:center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 50px;
+}
+
+.mission-overview {
+  font-weight: normal;
+  font-family: joesfin sans;
+  white-space:pre;
+  font-size: 25px;
+}
+
+.more-info {
+  display: flex;
+  color: white;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.more-info > div {
+  position: static;
+  padding:2vw;
+  overflow: hidden;
+  text-align: center;
+  width: 75%;
+  
+}
+
+.more-info > div > h1 
+{ 
+  position: relative;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-family:Arial, Helvetica, sans-serif;  
+}
+
+#ib1t2, #ib2t2, #ib3t2 {
+  transition: opacity .2s ease-in-out;
+  opacity: 0;
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#info-box-1, #info-box-2, #info-box-3 {
+  max-height: 150px;
+  transition: all .2s ease-in-out;
+}
+
+#info-box-1:hover, #info-box-2:hover, #info-box-3:hover {
+  transform: scale(1.1);
+  background-size: cover;
+}
+
+#info-box-1:hover {
+  background-image: url('/images/third1.jpg'); 
+}
+#info-box-2:hover {
+  background-image: url('/images/third3.jpg');
+}
+
+#info-box-3:hover {
+  background-image: url('/images/third2.jpg');
+}
+
+
+/* #google-slide {
+  margin-top: 3vw;
+
+} */
+
+#depart-title {
+  color: white;
+  text-align: center;
+  font-family: net-prox;
+}
+
+.card-section {
+  display: flex;
+}
+
+.card {
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  margin: auto;
+  margin-top: 1vw;
+  margin-bottom: 5vw;
+}
+
+#ryan, #jacob, #christian {
+  padding-top: 8px;
+}
+
+
+.name {
+  font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.title {
+  font-family: arial;
+  color: gray;
+  font-size: 18px;
+}
+
+.fdic {
+  font-family: Verdana,sans-serif;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #161A24;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+button:hover, a:hover {
+  background-color: #161A24;
+}
+
+.contact-info {
+  color: white;
+  text-align: center;
+}
+
+#location-img {
+  margin:auto;
+  display: block;
+  padding-bottom: 15px;
+}
+
+#address-link {
+  text-decoration: underline;
+}
+#address-link:hover {
+  cursor: pointer;
+}
+
+.location-title, .links-title {
+  background-color: #161A24;
+  text-align:center;
+  color: white;
+  font-family: net-prox;
+  font-weight: 500;
+}
+
+.contact-us-title, .contact-us-content {
+  font-family: net-prox;
+}
+
+.calendar-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  font-family: net-prox;
+}   
+
+.calendar {
+  margin: auto;
+  display: block;
+  width: 80%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.links-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: net-prox;
+}
+
+.links{
+    max-width: fit-content;
+    margin:auto
+}
+
+#g-font-2 {
+  margin-bottom: 2vw;
+}
+
+.links:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1367px) {
+  .center {
+    outline: white soild 1px;
+    font-family: net-prox;
+    z-index: 100;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .our-mission {
+    display: block;
+  }
+
+  .small {
+    max-width: 100%;
+  }
+
+}

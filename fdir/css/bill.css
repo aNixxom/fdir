@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+body {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.page-header {
+  border-bottom: solid 1px;
+  font-family: 'Cutive Mono', monospace;
+  text-align: center;
+}
+
+.header-title {
+  user-select: none;
+  margin: auto;
+  padding: 5%;
+}
+
+#bottom {
+  padding-bottom: 5%;
+}
+
+.main-bill, .bill-date {
+  text-align: center;
+}
+
+.bill-date {
+  font-weight: 550;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.bill-body {
+  font-size: larger;
+  font-family: 'Source Code Pro', monospace;
+}
+
+#bill-title-body, .bill-section-number {
+  text-decoration: underline;
+}
+
+.bill-section-content, .bill-section-number, .no-space {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+cite {
+  font-style: unset;
+}
+
+.cyber-definitions, .tech-definitions, .fdir-definitions, .tos-definitions {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.definitions-box {
+  font-family: monospace;
+  transition: opacity 1s;
+  max-width: 300px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(212, 209, 209);
+  display: none;
+  opacity: 0;
+}
